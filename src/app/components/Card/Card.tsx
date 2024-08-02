@@ -18,13 +18,12 @@ export function Card(input: CardProps) {
 
     const pathname = usePathname();
 
-
     return(
         <div className="card-container">
             <div style={{display: "flex"}} className="card-header">
                 <div className="card-image-container">
                     <Image 
-                        src={`${pathname}profile-thumbnail.png`}
+                        src={`/gfe-react-testimony-card/profile-thumbnail.png`}
                         alt="profile image"
                         width={48}
                         height={48}
