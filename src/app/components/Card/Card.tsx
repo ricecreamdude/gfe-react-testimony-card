@@ -5,7 +5,6 @@ export interface ICardData {
     name: string;
     handle: string;
     text: string;
-    imgUrl: string;
 } 
 
 export interface CardProps {
