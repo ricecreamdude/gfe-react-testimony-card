@@ -23,7 +23,7 @@ export function Card(input: CardProps) {
             <div style={{display: "flex"}} className="card-header">
                 <div className="card-image-container">
                     <Image 
-                        src={`/gfe-react-testimony-card/profile-thumbnail.png`}
+                        src={`/profile-thumbnail.png`}
                         alt="profile image"
                         width={48}
                         height={48}
