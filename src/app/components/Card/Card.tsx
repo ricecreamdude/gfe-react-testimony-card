@@ -1,5 +1,6 @@
 import Image from "next/image";
 import './Card.styles.css'
+import { prefix } from "@/utils/prefix";
 
 export interface ICardData {
     name: string;
@@ -18,7 +19,7 @@ export function Card(input: CardProps) {
             <div style={{display: "flex"}} className="card-header">
                 <div className="card-image-container">
                     <Image 
-                        src={'/profile-thumbnail.png'}
+                        src={`${prefix}/profile-thumbnail.png`}
                         alt="profile image"
                         width={48}
                         height={48}
