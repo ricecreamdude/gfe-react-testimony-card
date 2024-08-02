@@ -1,6 +1,8 @@
+
+
 import Image from "next/image";
 import './Card.styles.css'
-import { prefix } from "@/utils/prefix";
+import { usePathname } from 'next/navigation'
 
 export interface ICardData {
     name: string;
@@ -14,12 +16,15 @@ export interface CardProps {
 
 export function Card(input: CardProps) { 
 
+    const pathname = usePathname();
+
+
     return(
         <div className="card-container">
             <div style={{display: "flex"}} className="card-header">
                 <div className="card-image-container">
                     <Image 
-                        src={`${prefix}/profile-thumbnail.png`}
+                        src={`${pathname}profile-thumbnail.png`}
                         alt="profile image"
                         width={48}
                         height={48}

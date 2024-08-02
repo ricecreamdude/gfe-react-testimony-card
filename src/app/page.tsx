@@ -1,3 +1,5 @@
+'use client'
+
 import { Card, ICardData } from "./components/Card/Card";
 
 
